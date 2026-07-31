@@ -1,0 +1,1054 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Jeet Nakum - Senior Full Stack Developer & UI/UX Designer. Portfolio showcasing premium web development projects and skills." />
+  <meta name="keywords" content="Jeet Nakum, Full Stack Developer, UI/UX Designer, Web Developer, Portfolio" />
+  <meta name="author" content="Jeet Nakum" />
+  <meta property="og:title" content="Jeet Nakum | Full Stack Developer" />
+  <meta property="og:description" content="Premium developer portfolio showcasing world-class projects and skills." />
+  <title>Jeet Nakum | Full Stack Developer & Designer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+
+<body>
+
+  <!-- ===== LOADING SCREEN ===== -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">JN</div>
+      <div class="loader-bar">
+        <div class="loader-progress"></div>
+      </div>
+      <p class="loader-text">Initializing Experience...</p>
+    </div>
+  </div>
+
+  <!-- ===== CURSOR: Simple default arrow cursor ===== -->
+
+  <!-- ===== SCROLL PROGRESS ===== -->
+  <div id="scroll-progress" class="scroll-progress"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <header id="navbar" class="navbar">
+    <nav class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>JN<span class="logo-bracket">/&gt;</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#services" class="nav-link" data-section="services">Services</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#experience" class="nav-link" data-section="experience">Experience</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+          <i class='bx bx-moon' id="theme-icon"></i>
+        </button>
+        <button class="btn btn-primary btn-sm" onclick="scrollToSection('contact')">Hire Me</button>
+        <button id="hamburger" class="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section id="home" class="hero">
+    <canvas id="particle-canvas"></canvas>
+
+    <div class="hero-content">
+      <div class="hero-text reveal-left">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Available for Work
+        </div>
+        <p class="hero-greeting">Hello, I'm</p>
+        <h1 class="hero-name">Jeet Nakum</h1>
+        <div class="hero-role">
+          <span class="role-prefix">I'm a </span>
+          <span id="typed-text" class="typed-text"></span>
+          <span class="typed-cursor">|</span>
+        </div>
+        <p class="hero-desc">
+          I turn ideas into real, working websites — from the first line of code to the final
+          pixel on screen. As a Full Stack &amp; Web Developer, I build both the things users
+          see and the logic that powers them behind the scenes. Clean code, fast performance,
+          and a product that actually works — that's what I care about.
+        </p>
+        <div class="hero-btns">
+          <a href="#projects" class="btn btn-primary btn-ripple">
+            <i class='bx bx-rocket'></i> View Projects
+          </a>
+          <a href="Jeet_Nakum_Resume.pdf" class="btn btn-outline btn-ripple" download>
+            <i class='bx bx-download'></i> Download CV
+          </a>
+          <a href="#contact" class="btn btn-ghost btn-ripple">
+            <i class='bx bx-message-dots'></i> Contact Me
+          </a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Jeetnakum" target="_blank" class="social-link" aria-label="GitHub">
+            <i class='bx bxl-github'></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jeetnakum/" target="_blank" class="social-link" aria-label="LinkedIn">
+            <i class='bx bxl-linkedin'></i>
+          </a>
+          <a href="https://www.instagram.com/jeetnakum_85/" target="_blank" class="social-link" aria-label="Instagram">
+            <i class='bx bxl-instagram'></i>
+          </a>
+          <a href="mailto:jeetnakum85@gmail.com" class="social-link" aria-label="Email">
+            <i class='bx bx-envelope'></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal-right">
+        <div class="profile-wrapper">
+          <div class="profile-ring ring-1"></div>
+          <div class="profile-ring ring-2"></div>
+          <div class="profile-ring ring-3"></div>
+          <div class="profile-img-container">
+            <img src="images/jeet_headshot.png" alt="Jeet Nakum - Full Stack Developer" class="profile-img"
+              loading="eager" />
+          </div>
+          <!-- <div class="floating-badge badge-top-right">
+            <i class='bx bxl-react'></i> React
+          </div>
+          <div class="floating-badge badge-bottom-left">
+            <i class='bx bxl-nodejs'></i> Node.js
+          </div>
+          <div class="floating-badge badge-top-left">
+            <i class='bx bxs-star'></i> 5+ Yrs
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section id="about" class="section about">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get To Know</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-side reveal-left">
+          <div class="about-img-frame">
+            <img src="images/jeet_headshot_new.jpg" alt="About Jeet Nakum" loading="lazy" />
+            <div class="about-img-accent"></div>
+          </div>
+          <!-- <div class="about-stats-grid">
+            <div class="stat-card reveal-up" data-delay="100">
+              <span class="stat-num" data-target="2">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Yrs Learning</span>
+            </div>
+            <div class="stat-card reveal-up" data-delay="200">
+              <span class="stat-num" data-target="15">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card reveal-up" data-delay="300">
+              <span class="stat-num" data-target="5">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+            <div class="stat-card reveal-up" data-delay="400">
+              <span class="stat-num" data-target="3">0</span><span class="stat-suffix">+</span>
+              <span class="stat-label">Hackathons</span>
+            </div>
+          </div> -->
+        </div>
+
+        <div class="about-content-side reveal-right">
+          <h3 class="about-subtitle">A College Student Who Builds Things on the Web</h3>
+          <p class="about-text">
+            Hey! I'm <strong>Jeet Nakum</strong> — a Web &amp; Full Stack Developer currently studying
+            in college in India. I don't have professional work experience yet, but I've spent the
+            last couple of years learning by actually building things — real projects, not just tutorials.
+          </p>
+          <p class="about-text">
+            I started with basic HTML and CSS, and slowly worked my way up to building full stack web apps.
+            I enjoy figuring out how both the frontend and backend fit together. Right now I'm focused
+            on getting better every day, working on personal projects, and looking for my first real
+            opportunity in the industry.
+          </p>
+
+          <div class="about-details">
+            <div class="detail-item">
+              <i class='bx bx-user'></i>
+              <span class="detail-label">Name:</span>
+              <span class="detail-value">Jeet Nakum</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-map'></i>
+              <span class="detail-label">Location:</span>
+              <span class="detail-value">Gujarat, India</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-envelope'></i>
+              <span class="detail-label">Email:</span>
+              <span class="detail-value">jeetnakum85@gmail.com</span>
+            </div>
+            <div class="detail-item">
+              <i class='bx bx-briefcase'></i>
+              <span class="detail-label">Available:</span>
+              <span class="detail-value available">Open to Work</span>
+            </div>
+          </div>
+
+          <!-- <div class="about-btns">
+            <a href="#" class="btn btn-primary btn-ripple"><i class='bx bx-download'></i> Download CV</a>
+            <a href="#contact" class="btn btn-outline btn-ripple"><i class='bx bx-send'></i> Let's Talk</a>
+          </div> -->
+        </div>
+      </div>
+
+      <!-- Education & Timeline -->
+      <div class="timeline-section reveal-up">
+        <h3 class="timeline-title">Education & <span class="gradient-text">Background</span></h3>
+        <div class="timeline">
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">Sep 2022 – 2027</span>
+              <h4>B.Tech in Computer Engineering</h4>
+              <p>Marwadi University (NAAC A+), Rajkot</p>
+              <span class="timeline-badge">CGPA: 6.54 (Present)</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal-right">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2022</span>
+              <h4>Higher Secondary (HSC)</h4>
+              <p>Abhilasha School, Vanavad</p>
+              <span class="timeline-badge">52%</span>
+            </div>
+          </div>
+          <div class="timeline-item reveal-left">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <span class="timeline-date">2020</span>
+              <h4>Matriculation (SSC)</h4>
+              <p>Abhilasha School, Vanavad</p>
+              <span class="timeline-badge">68%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS SECTION ===== -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Expertise</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-tabs reveal-up">
+        <button class="skill-tab active" data-tab="languages">Languages</button>
+        <button class="skill-tab" data-tab="frameworks">Frameworks</button>
+        <button class="skill-tab" data-tab="tools">Tools</button>
+        <button class="skill-tab" data-tab="database">DB &amp; VCS</button>
+        <button class="skill-tab" data-tab="soft">Soft Skills</button>
+      </div>
+
+      <div class="skills-content">
+        <!-- Languages -->
+        <div class="skill-panel active" id="tab-languages">
+          <div class="skills-bars">
+            <div class="skill-bar-item reveal-up">
+              <div class="skill-info"><span>JavaScript</span><span>90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item reveal-up">
+              <div class="skill-info"><span>HTML &amp; CSS</span><span>95%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item reveal-up">
+              <div class="skill-info"><span>C</span><span>75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card reveal-up"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+            <div class="skill-card reveal-up"><i class='bx bxl-html5'></i><span>HTML5</span></div>
+            <div class="skill-card reveal-up"><i class='bx bxl-css3'></i><span>CSS3</span></div>
+            <div class="skill-card reveal-up"><i class='bx bxl-c-plus-plus'></i><span>C</span></div>
+          </div>
+        </div>
+
+        <!-- Frameworks -->
+        <div class="skill-panel" id="tab-frameworks">
+          <div class="skills-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>React.js</span><span>85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Node.js</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card"><i class='bx bxl-react'></i><span>React.js</span></div>
+            <div class="skill-card"><i class='bx bxl-nodejs'></i><span>Node.js</span></div>
+          </div>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-panel" id="tab-tools">
+          <div class="skills-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>VS Code / Cursor</span><span>90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Figma</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>AI (Claude, Antigravity)</span><span>95%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card"><i class='bx bxl-visual-studio'></i><span>VS Code</span></div>
+            <div class="skill-card"><i class='bx bxl-figma'></i><span>Figma</span></div>
+            <div class="skill-card"><i class='bx bx-bot'></i><span>AI Tools</span></div>
+          </div>
+        </div>
+
+        <!-- Database & VCS -->
+        <div class="skill-panel" id="tab-database">
+          <div class="skills-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>MongoDB</span><span>80%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>MySQL</span><span>75%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Git / GitHub</span><span>85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card"><i class='bx bxl-mongodb'></i><span>MongoDB</span></div>
+            <div class="skill-card"><i class='bx bx-data'></i><span>MySQL</span></div>
+            <div class="skill-card"><i class='bx bxl-git'></i><span>Git</span></div>
+            <div class="skill-card"><i class='bx bxl-github'></i><span>GitHub</span></div>
+          </div>
+        </div>
+
+        <!-- Soft Skills -->
+        <div class="skill-panel" id="tab-soft">
+          <div class="skills-bars">
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Problem Solving</span><span>90%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Time Management</span><span>85%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-info"><span>Continuous Learning</span><span>95%</span></div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-width="95"></div>
+              </div>
+            </div>
+          </div>
+          <div class="skill-cards">
+            <div class="skill-card"><i class='bx bx-brain'></i><span>Problem Solving</span></div>
+            <div class="skill-card"><i class='bx bx-time'></i><span>Time Mgmt</span></div>
+            <div class="skill-card"><i class='bx bx-book-reader'></i><span>Learning</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES SECTION ===== -->
+  <section id="services" class="section services">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">What I Offer</span>
+        <h2 class="section-title">My <span class="gradient-text">Services</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card reveal-up" data-delay="0">
+          <div class="service-icon">
+            <i class='bx bx-code-alt'></i>
+          </div>
+          <div class="service-glow"></div>
+          <h3>Frontend Web Development</h3>
+          <p>Building responsive, interactive web interfaces using HTML, CSS, JavaScript, and React.js.</p>
+          <ul class="service-features">
+            <li><i class='bx bx-check'></i> Responsive Design</li>
+            <li><i class='bx bx-check'></i> React Components</li>
+            <li><i class='bx bx-check'></i> Interactive UIs</li>
+          </ul>
+          <a href="#contact" class="service-link">Let's Talk <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="100">
+          <div class="service-icon">
+            <i class='bx bx-server'></i>
+          </div>
+          <div class="service-glow"></div>
+          <h3>Backend &amp; API Development</h3>
+          <p>Creating secure REST APIs and server-side logic using Node.js and Express.</p>
+          <ul class="service-features">
+            <li><i class='bx bx-check'></i> RESTful APIs</li>
+            <li><i class='bx bx-check'></i> Node.js Logic</li>
+            <li><i class='bx bx-check'></i> User Authentication</li>
+          </ul>
+          <a href="#contact" class="service-link">Let's Talk <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="200">
+          <div class="service-icon">
+            <i class='bx bx-layer'></i>
+          </div>
+          <div class="service-glow"></div>
+          <h3>Full Stack Applications</h3>
+          <p>End-to-end web apps integrating React frontend with Node.js backend and databases.</p>
+          <ul class="service-features">
+            <li><i class='bx bx-check'></i> MERN Stack</li>
+            <li><i class='bx bx-check'></i> Database (MongoDB/MySQL)</li>
+            <li><i class='bx bx-check'></i> End-to-end Integration</li>
+          </ul>
+          <a href="#contact" class="service-link">Let's Talk <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+
+        <div class="service-card reveal-up" data-delay="300">
+          <div class="service-icon">
+            <i class='bx bx-palette'></i>
+          </div>
+          <div class="service-glow"></div>
+          <h3>UI Prototyping</h3>
+          <p>Designing clean, user-friendly wireframes and mockups for websites before coding.</p>
+          <ul class="service-features">
+            <li><i class='bx bx-check'></i> Wireframing</li>
+            <li><i class='bx bx-check'></i> Figma Mockups</li>
+            <li><i class='bx bx-check'></i> User-Centric Design</li>
+          </ul>
+          <a href="#contact" class="service-link">Let's Talk <i class='bx bx-right-arrow-alt'></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS SECTION ===== -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Work</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-filter reveal-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web App</button>
+        <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        <button class="filter-btn" data-filter="design">UI/UX</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 0: Portfolio -->
+        <div class="project-card reveal-up" data-category="web">
+          <div class="project-img">
+            <img src="images/portfolio.png" alt="Personal Portfolio Website" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeetnakum" class="project-link-btn" target="_blank"><i
+                    class='bx bxl-github'></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Personal Portfolio Website</h3>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-bottom: 0.8rem;"><i
+                class='bx bx-calendar'></i> January 2026 – March 2026</span>
+            <p>Designed and developed a premium, responsive personal portfolio using modern glassmorphism UI, smooth
+              animations, and Vanilla JS without external frameworks.</p>
+            <ul class="project-features">
+              <li><i class='bx bx-check-circle'></i> Glassmorphism UI</li>
+              <li><i class='bx bx-check-circle'></i> Micro-animations</li>
+              <li><i class='bx bx-check-circle'></i> SEO &amp; Performance Optimized</li>
+            </ul>
+          </div>
+        </div>
+        <!-- Project 1 -->
+        <div class="project-card reveal-up" data-category="web">
+          <div class="project-img">
+            <img src="images/survey_form.png" alt="Student Survey Form" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeetnakum/student-survey-form" class="project-link-btn" target="_blank"><i
+                    class='bx bxl-github'></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <h3>Student Survey Form</h3>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-bottom: 0.8rem;"><i
+                class='bx bx-calendar'></i> Jul 2023 – Nov 2023</span>
+            <p>Built a responsive Student Survey Form using HTML, CSS, and JavaScript for efficient data collection and
+              feedback management.</p>
+            <ul class="project-features">
+              <li><i class='bx bx-check-circle'></i> Form validation</li>
+              <li><i class='bx bx-check-circle'></i> Interactive UI features</li>
+              <li><i class='bx bx-check-circle'></i> Responsive design</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card reveal-up" data-category="fullstack">
+          <div class="project-img">
+            <img src="images/car_rental.png" alt="Car Rental Website" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeetnakum" class="project-link-btn" target="_blank"><i
+                    class='bx bxl-github'></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3>Car Rental Website</h3>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-bottom: 0.8rem;"><i
+                class='bx bx-calendar'></i> Jan 2024 – Apr 2024</span>
+            <p>Built a full-stack Car Rental Website using React.js, Node.js, and MongoDB with secure user
+              authentication and online vehicle booking.</p>
+            <ul class="project-features">
+              <li><i class='bx bx-check-circle'></i> User authentication</li>
+              <li><i class='bx bx-check-circle'></i> Vehicle booking system</li>
+              <li><i class='bx bx-check-circle'></i> Car listings management</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card reveal-up" data-category="fullstack">
+          <div class="project-img">
+            <img src="images/khedut_market.png" alt="Khedut-Market" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeetnakum/khedut-market" class="project-link-btn" target="_blank"><i
+                    class='bx bxl-github'></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3>Khedut-Market</h3>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-bottom: 0.8rem;"><i
+                class='bx bx-calendar'></i> Dec 2025 – May 2026</span>
+            <p>Built a full-stack Khedut-Market platform connecting farmers directly with buyers through a digital
+              marketplace for agricultural products.</p>
+            <ul class="project-features">
+              <li><i class='bx bx-check-circle'></i> Digital marketplace</li>
+              <li><i class='bx bx-check-circle'></i> Product listings</li>
+              <li><i class='bx bx-check-circle'></i> Order management</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reveal-up" data-category="fullstack">
+          <div class="project-img">
+            <img src="images/event_marketing.png" alt="Event Marketing Platform" loading="lazy" />
+            <div class="project-overlay">
+              <div class="project-links">
+                <a href="https://github.com/Jeetnakum/event-marketing-platform" class="project-link-btn"
+                  target="_blank"><i class='bx bxl-github'></i> Code</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-info">
+            <div class="project-tags">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">MongoDB</span>
+            </div>
+            <h3>Event Marketing Tools</h3>
+            <span style="font-size: 0.85rem; color: var(--text-secondary); display: block; margin-bottom: 0.8rem;"><i
+                class='bx bx-calendar'></i> Jun 2026 – Present (Ongoing)</span>
+            <p>Built a full-stack Event Marketing and Promotion platform that enables organizers to create, manage, and
+              promote events centrally.</p>
+            <ul class="project-features">
+              <li><i class='bx bx-check-circle'></i> Campaign management</li>
+              <li><i class='bx bx-check-circle'></i> Event scheduling</li>
+              <li><i class='bx bx-check-circle'></i> Online registrations</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects-cta reveal-up">
+        <a href="https://github.com/Jeetnakum" target="_blank" class="btn btn-outline btn-ripple">
+          <i class='bx bxl-github'></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EXPERIENCE SECTION ===== -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">My Journey</span>
+        <h2 class="section-title">Learning &amp; <span class="gradient-text">Journey</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="exp-timeline">
+        <div class="exp-item reveal-left">
+          <div class="exp-dot">
+            <i class='bx bx-code-alt'></i>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Full Stack Web Development</h3>
+                <span class="exp-company">Self-Taught — Personal Projects</span>
+              </div>
+              <span class="exp-date">2023 – Present</span>
+            </div>
+            <p>Building full stack web applications on my own — from designing the UI to writing APIs and connecting
+              databases. Each project taught me something new that no classroom could.</p>
+            <div class="exp-skills">
+              <span>React</span><span>Node.js</span><span>MongoDB</span><span>Express</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-right">
+          <div class="exp-dot">
+            <i class='bx bx-desktop'></i>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Web Development</h3>
+                <span class="exp-company">Self-Taught — Online Platforms</span>
+              </div>
+              <span class="exp-date">2022 – 2023</span>
+            </div>
+            <p>Started with HTML, CSS and JavaScript. Built many small projects to solidify my understanding. Got
+              comfortable with React and started making real, interactive web pages.</p>
+            <div class="exp-skills">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>React</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="exp-item reveal-left">
+          <div class="exp-dot">
+            <i class='bx bx-book-open'></i>
+          </div>
+          <div class="exp-card">
+            <div class="exp-header">
+              <div>
+                <h3>Started Coding — First Steps</h3>
+                <span class="exp-company">College + YouTube + Curiosity</span>
+              </div>
+              <span class="exp-date">2022</span>
+            </div>
+            <p>Wrote my very first lines of code in college. Fell in love with the idea that you can build anything on a
+              screen. That curiosity is what keeps me going every single day.</p>
+            <div class="exp-skills">
+              <span>C</span><span>HTML/CSS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATIONS & ACHIEVEMENTS ===== -->
+  <section id="certifications" class="section certifications">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Certifications & <span class="gradient-text">Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="cert-grid">
+        <div class="cert-card reveal-up">
+          <div class="cert-icon"><i class='bx bxs-badge-check'></i></div>
+          <div class="cert-info">
+            <h4>Web Development Fundamentals</h4>
+            <span>IBM SkillsBuild</span>
+          </div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-icon"><i class='bx bx-code-block'></i></div>
+          <div class="cert-info">
+            <h4>Automated Software Testing with Python</h4>
+            <span>Udemy</span>
+          </div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-icon"><i class='bx bxl-aws'></i></div>
+          <div class="cert-info">
+            <h4>AWS Cloud Foundations</h4>
+            <span>AWS Academy</span>
+          </div>
+        </div>
+        <div class="cert-card reveal-up">
+          <div class="cert-icon"><i class='bx bxl-aws'></i></div>
+          <div class="cert-info">
+            <h4>AWS Data Engineering</h4>
+            <span>AWS Academy</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS SECTION =====
+  <section id="testimonials" class="section testimonials">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Kind Words</span>
+        <h2 class="section-title">Client <span class="gradient-text">Testimonials</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="testimonial-wrapper reveal-up">
+        <div class="testimonial-track" id="testimonial-track">
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class='bx bxs-quote-alt-left'></i></div>
+            <p>"Jeet is an exceptional developer who delivered beyond our expectations. The quality of his work and
+              attention to detail is outstanding. Our project was completed on time and the final product was absolutely
+              stunning."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">RK</div>
+              <div>
+                <h4>Rahul Kapoor</h4>
+                <span>CTO, TechStartup India</span>
+              </div>
+              <div class="testimonial-stars">
+                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                  class='bx bxs-star'></i><i class='bx bxs-star'></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class='bx bxs-quote-alt-left'></i></div>
+            <p>"Working with Jeet was an absolute pleasure. He understood our requirements perfectly and translated them
+              into a beautiful, functional website. His communication was clear and the project was delivered ahead of
+              schedule."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">SP</div>
+              <div>
+                <h4>Sarah Patel</h4>
+                <span>Founder, DesignCo</span>
+              </div>
+              <div class="testimonial-stars">
+                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                  class='bx bxs-star'></i><i class='bx bxs-star'></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="testimonial-quote"><i class='bx bxs-quote-alt-left'></i></div>
+            <p>"Jeet's technical expertise and creative vision transformed our outdated platform into a modern,
+              high-performance application. Our user engagement increased by 150% after the redesign. Truly a talented
+              professional!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">AM</div>
+              <div>
+                <h4>Arjun Mehta</h4>
+                <span>Product Manager, InnovateTech</span>
+              </div>
+              <div class="testimonial-stars">
+                <i class='bx bxs-star'></i><i class='bx bxs-star'></i><i class='bx bxs-star'></i><i
+                  class='bx bxs-star'></i><i class='bx bxs-star'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-controls">
+          <button id="prev-btn" class="testimonial-btn" aria-label="Previous"><i
+              class='bx bx-chevron-left'></i></button>
+          <div class="testimonial-dots" id="testimonial-dots">
+            <span class="dot active"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <button id="next-btn" class="testimonial-btn" aria-label="Next"><i class='bx bx-chevron-right'></i></button>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ===== CONTACT SECTION ===== -->
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <h3>Let's Create Something Amazing Together</h3>
+          <p>I'm always open to new opportunities, exciting projects, and creative collaborations. Whether you have a
+            project in mind or just want to say hello, my inbox is always open!</p>
+
+          <div class="contact-details">
+            <div class="contact-detail-item">
+              <div class="contact-icon"><i class='bx bx-map-pin'></i></div>
+              <div>
+                <h4>Location</h4>
+                <p>Gujarat, India</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-icon"><i class='bx bx-envelope'></i></div>
+              <div>
+                <h4>Email</h4>
+                <p>jeetnakum85@gmail.com</p>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-icon"><i class='bx bx-phone'></i></div>
+              <div>
+                <h4>Phone</h4>
+                <p>+91 9173316353</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/Jeetnakum" target="_blank" class="social-link-lg" aria-label="GitHub"><i
+                class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/jeetnakum/" target="_blank" class="social-link-lg"
+              aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/jeetnakum_85/" target="_blank" class="social-link-lg"
+              aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+          </div>
+
+          <!-- Map Placeholder -->
+          <div class="map-placeholder">
+            <div class="map-pin-anim"><i class='bx bxs-map-pin'></i></div>
+            <p>Gujarat, India 🇮🇳</p>
+            <span>Available for remote work globally</span>
+          </div>
+        </div>
+
+        <div class="contact-form-wrapper reveal-right">
+          <form id="contact-form" class="contact-form" novalidate>
+            <div class="form-group">
+              <label for="contact-name">Full Name</label>
+              <div class="input-wrapper">
+                <i class='bx bx-user'></i>
+                <input type="text" id="contact-name" name="name" placeholder="Your full name" required />
+              </div>
+              <span class="error-msg" id="name-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-email">Email Address</label>
+              <div class="input-wrapper">
+                <i class='bx bx-envelope'></i>
+                <input type="email" id="contact-email" name="email" placeholder="your@email.com" required />
+              </div>
+              <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <div class="input-wrapper">
+                <i class='bx bx-message-square-detail'></i>
+                <input type="text" id="contact-subject" name="subject" placeholder="What's this about?" required />
+              </div>
+              <span class="error-msg" id="subject-error"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <div class="input-wrapper textarea-wrapper">
+                <i class='bx bx-edit'></i>
+                <textarea id="contact-message" name="message" placeholder="Tell me about your project..." rows="5"
+                  required></textarea>
+              </div>
+              <span class="error-msg" id="message-error"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-full btn-ripple" id="submit-btn">
+              <i class='bx bx-send'></i>
+              <span id="btn-text">Send Message</span>
+            </button>
+            <div id="form-success" class="form-success" style="display:none">
+              <i class='bx bx-check-circle'></i> Message sent successfully! I'll get back to you soon.
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo footer-logo">
+            <span class="logo-bracket">&lt;</span>JN<span class="logo-bracket">/&gt;</span>
+          </a>
+          <p>Crafting exceptional digital experiences with passion, precision, and purpose.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/Jeetnakum" target="_blank" class="social-link" aria-label="GitHub"><i
+                class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/jeetnakum/" target="_blank" class="social-link"
+              aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://www.instagram.com/jeetnakum_85/" target="_blank" class="social-link"
+              aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="#services">Frontend Dev</a></li>
+            <li><a href="#services">Backend &amp; APIs</a></li>
+            <li><a href="#services">Full Stack Apps</a></li>
+            <li><a href="#services">UI Prototyping</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter">
+          <h4>Stay Connected</h4>
+          <p>Get my latest projects and articles delivered to your inbox.</p>
+          <div class="newsletter-form">
+            <input type="email" placeholder="your@email.com" id="newsletter-email" aria-label="Newsletter email" />
+            <button class="btn btn-primary" id="newsletter-btn" aria-label="Subscribe"><i
+                class='bx bx-send'></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="footer-year"></span> Jeet Nakum. All Rights Reserved. Crafted with <i class='bx bxs-heart'
+            style="color:#EF4444"></i> in India.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCROLL TO TOP ===== -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class='bx bx-chevron-up'></i>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
