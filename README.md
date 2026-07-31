@@ -7,31 +7,31 @@ Welcome to the source code of my personal portfolio website! This project showca
 Here is a glimpse of how the portfolio looks:
 
 ### Home
-![Home Section](.images/image/m1.png)
+![Home Section](./images/image/m1.png)
 
 ### About
-![About Section](.images/image/m2.png)
+![About Section](./images/image/m2.png)
 
 ### Education
-![Education & Skills](.images/image/m3.png)
+![Education & Skills](./images/image/m3.png)
 
 ### Skills
-![Education & Skills](.images/image/m4.png)
+![Education & Skills](./images/image/m4.png)
 
 ### Services
-![Projects Section](.images/image/m5.png)
+![Projects Section](./images/image/m5.png)
 
 ### Projects
-![Education & Skills](.images/image/m6.png)
+![Education & Skills](./images/image/m6.png)
 
 ### Journey
-![Education & Skills](.images/image/m7.png)
+![Education & Skills](./images/image/m7.png)
 
 ### Certifications
-![Education & Skills](.images/image/m8.png)
+![Education & Skills](./images/image/m8.png)
 
 ### Contact Me
-![Contact Section](.images/image/m9.png)
+![Contact Section](./images/image/m9.png)
 
 ---
 
