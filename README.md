@@ -2,24 +2,47 @@
 
 ![Portfolio Preview](./images/portfolio.png)
 
-Welcome to my personal portfolio repository! I turn ideas into real, working websites — from the first line of code to the final pixel on screen.
+Welcome to my personal portfolio repository! I'm **Jeet Nakum**, a B.Tech Computer Engineering student at Marwadi University (Gujarat, India) and an aspiring **Full Stack Developer**. I love turning ideas into real, working websites.
 
 ## 👨‍💻 About Me
+I started my coding journey in 2022 and have since built multiple full-stack applications. While I'm currently studying, I believe in learning by doing — building real projects rather than just watching tutorials. I am currently **Open to Work** and looking for my first opportunity in the tech industry.
 
-I am a **Full Stack & Web Developer** and **UI/UX Designer**. I build both the interfaces users see and the logic that powers them behind the scenes. Clean code, fast performance, and a product that actually works — that's what I care about.
+## 🛠️ My Tech Stack
+- **Languages:** JavaScript, HTML5, CSS3, C
+- **Frameworks/Backend:** React.js, Node.js, Express.js
+- **Databases & Tools:** MongoDB, MySQL, Git/GitHub, VS Code, Figma
+- **Certifications:** AWS Cloud Foundations & Data Eng. (AWS Academy), Web Dev Fundamentals (IBM SkillsBuild)
 
-## ✨ Features
+---
 
-- **Modern & Premium Design**: Beautiful UI/UX with a focus on micro-interactions.
-- **Fully Responsive**: Flawless experience across mobile, tablet, and desktop devices.
-- **Sleek Aesthetics**: Custom CSS with a dark theme emphasis, smooth scrolling, and dynamic animations.
-- **Typing Effects & Loaders**: Engaging initial loading screen and dynamic text typing effects.
+## 💻 Featured Projects (With Outputs)
 
-## 🛠️ Technologies Used
+### 1. Personal Portfolio Website
+![Portfolio Output](./images/portfolio.png)
+- **Tech Stack:** HTML5, CSS3, JavaScript
+- **Features:** Glassmorphism UI, Micro-animations, Fully responsive.
 
-- **HTML5**: For semantic and accessible structure.
-- **CSS3**: Vanilla CSS for styling, Flexbox/Grid layouts, and keyframe animations.
-- **JavaScript**: For interactive elements, scroll reveal, and DOM manipulation.
+### 2. Car Rental Website
+![Car Rental Output](./images/car_rental.png)
+- **Tech Stack:** React.js, Node.js, MongoDB
+- **Features:** User authentication, Vehicle booking system, Car listings management.
+
+### 3. Khedut-Market
+![Khedut Market Output](./images/khedut_market.png)
+- **Tech Stack:** React.js, Node.js, MongoDB
+- **Features:** Digital marketplace connecting farmers with buyers, Product listings, Order management.
+
+### 4. Event Marketing Platform
+![Event Marketing Output](./images/event_marketing.png)
+- **Tech Stack:** React.js, Node.js, MongoDB
+- **Features:** Campaign management, Event scheduling, Online registrations.
+
+### 5. Student Survey Form
+![Survey Form Output](./images/survey_form.png)
+- **Tech Stack:** HTML5, CSS3, JavaScript
+- **Features:** Form validation, Interactive UI features.
+
+---
 
 ## 🚀 How to Run Locally
 
@@ -27,18 +50,9 @@ I am a **Full Stack & Web Developer** and **UI/UX Designer**. I build both the i
    ```bash
    git clone https://github.com/Jeetnakum/Personal-Portfolio.git
    ```
-2. Navigate into the directory:
-   ```bash
-   cd Personal-Portfolio
-   ```
-3. Open `index.html` in your preferred web browser.
+2. Open the project folder and run `index.html` in your browser.
 
 ## 📫 Connect with Me
-
-- [LinkedIn](https://www.linkedin.com/in/jeetnakum/)
-- [GitHub](https://github.com/Jeetnakum)
-- [Instagram](https://www.instagram.com/jeetnakum_85/)
-- Email: jeetnakum85@gmail.com
-
----
-*Designed and Developed with ❤️ by Jeet Nakum*
+- **LinkedIn**: [jeetnakum](https://www.linkedin.com/in/jeetnakum/)
+- **GitHub**: [Jeetnakum](https://github.com/Jeetnakum)
+- **Email**: jeetnakum85@gmail.com
