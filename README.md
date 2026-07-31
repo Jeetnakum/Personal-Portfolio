@@ -1,58 +1,59 @@
-# 🚀 Jeet Nakum - Personal Portfolio
+# 🚀 Jeet Nakum - Personal Portfolio Website
 
-![Portfolio Preview](./images/portfolio.png)
+Welcome to the source code of my personal portfolio website! This project showcases my skills, experience, and the various full-stack projects I have built. 
 
-Welcome to my personal portfolio repository! I'm **Jeet Nakum**, a B.Tech Computer Engineering student at Marwadi University (Gujarat, India) and an aspiring **Full Stack Developer**. I love turning ideas into real, working websites.
+## 📸 Website Preview
 
-## 👨‍💻 About Me
-I started my coding journey in 2022 and have since built multiple full-stack applications. While I'm currently studying, I believe in learning by doing — building real projects rather than just watching tutorials. I am currently **Open to Work** and looking for my first opportunity in the tech industry.
+Here is a glimpse of how the portfolio looks:
 
-## 🛠️ My Tech Stack
-- **Languages:** JavaScript, HTML5, CSS3, C
-- **Frameworks/Backend:** React.js, Node.js, Express.js
-- **Databases & Tools:** MongoDB, MySQL, Git/GitHub, VS Code, Figma
-- **Certifications:** AWS Cloud Foundations & Data Eng. (AWS Academy), Web Dev Fundamentals (IBM SkillsBuild)
+### Home & About
+![Home Section](./images/ss1.png)
+![About Section](./images/ss2.png)
 
----
+### Education & Skills
+![Education & Skills](./images/ss3.png)
 
-## 💻 Featured Projects (With Outputs)
+### Projects & Services
+![Projects Section](./images/ss4.png)
 
-### 1. Personal Portfolio Website
-![Portfolio Output](./images/portfolio.png)
-- **Tech Stack:** HTML5, CSS3, JavaScript
-- **Features:** Glassmorphism UI, Micro-animations, Fully responsive.
-
-### 2. Car Rental Website
-![Car Rental Output](./images/car_rental.png)
-- **Tech Stack:** React.js, Node.js, MongoDB
-- **Features:** User authentication, Vehicle booking system, Car listings management.
-
-### 3. Khedut-Market
-![Khedut Market Output](./images/khedut_market.png)
-- **Tech Stack:** React.js, Node.js, MongoDB
-- **Features:** Digital marketplace connecting farmers with buyers, Product listings, Order management.
-
-### 4. Event Marketing Platform
-![Event Marketing Output](./images/event_marketing.png)
-- **Tech Stack:** React.js, Node.js, MongoDB
-- **Features:** Campaign management, Event scheduling, Online registrations.
-
-### 5. Student Survey Form
-![Survey Form Output](./images/survey_form.png)
-- **Tech Stack:** HTML5, CSS3, JavaScript
-- **Features:** Form validation, Interactive UI features.
+### Contact Me
+![Contact Section](./images/ss5.png)
 
 ---
 
-## 🚀 How to Run Locally
+## 📝 About This Project
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Jeetnakum/Personal-Portfolio.git
-   ```
-2. Open the project folder and run `index.html` in your browser.
+This portfolio is entirely custom-built by me from scratch without relying on external CSS templates. It demonstrates my ability to design premium user interfaces and write clean, maintainable code.
 
-## 📫 Connect with Me
-- **LinkedIn**: [jeetnakum](https://www.linkedin.com/in/jeetnakum/)
-- **GitHub**: [Jeetnakum](https://github.com/Jeetnakum)
-- **Email**: jeetnakum85@gmail.com
+**Key Features:**
+- **Premium Glassmorphism UI:** Modern, sleek, and frosted-glass aesthetic.
+- **Micro-Animations & Interactions:** Smooth scrolling, hover effects, and typing animations for an engaging user experience.
+- **100% Responsive:** Flawless layout and design across mobile, tablet, and desktop screens.
+- **Dark Theme:** Easy on the eyes and gives a highly professional look.
+
+## 🛠️ Built With
+
+- **HTML5:** Semantic structure.
+- **CSS3:** Custom styles, Flexbox, CSS Grid, and Keyframe Animations.
+- **JavaScript (Vanilla):** DOM manipulation, scroll events, and dynamic typing effects.
+
+---
+
+## 📫 Let's Connect!
+
+I am always open to new opportunities, exciting projects, and creative collaborations. Feel free to reach out to me!
+
+- 📧 **Email:** [jeetnakum85@gmail.com](mailto:jeetnakum85@gmail.com)
+- 💼 **LinkedIn:** [jeetnakum](https://www.linkedin.com/in/jeetnakum/)
+- 🐙 **GitHub:** [Jeetnakum](https://github.com/Jeetnakum)
+- 📸 **Instagram:** [@jeetnakum_85](https://www.instagram.com/jeetnakum_85/)
+
+---
+
+## 🌐 Live Demo
+
+Want to see the website in action? Click the link below to open the live version directly in your browser:
+
+### 👉 **[Live Website Demo - Click Here](https://jeetnakum.github.io/Personal-Portfolio/)**
+
+*(Note: The live link works via GitHub Pages. If you just created the repository, make sure GitHub Pages is enabled in your repository settings targeting the `main` branch.)*
